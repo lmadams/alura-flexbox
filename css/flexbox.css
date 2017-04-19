@@ -1,0 +1,121 @@
+/** HEADER */
+
+/* Pai dos elementos */
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+
+    /* Espaçamento entre elementos */
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+/* Header Mobile */
+@media(max-width: 768px) {
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+}
+
+/** FOOTER */
+/** ####################################################################################################### */
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/** Mapa de Cursos */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    
+    /*flex-direction: column;*/
+    /*Quebra*/
+    /*flex-wrap: wrap;*/
+
+    /* Mesma coisa que as duas linhas de cima*/
+    flex-flow: column wrap;
+    
+    height: 250px;
+}
+
+/* Rodape mobile cursos */
+@media(max-width: 768px) {
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+}
+
+/** CONTEUDO */
+/** ####################################################################################################### */
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+/* Elementos multiplos de 4 */
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* Primeiro Elemento */
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/** Conteudo Mobile */
+@media(max-width: 768px) {
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+}
