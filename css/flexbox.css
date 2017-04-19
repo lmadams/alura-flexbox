@@ -24,6 +24,11 @@
         align-items: initial;
         text-align: center;
     }
+
+    /* ordem item do flex*/ 
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
 }
 
 /** FOOTER */
