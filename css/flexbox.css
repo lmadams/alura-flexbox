@@ -124,3 +124,40 @@
         flex-direction: column;
     }
 }
+
+/** Video */
+/** ####################################################################################################### */
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    /* Pega o resto do espaço disponivel */
+    flex-grow: 2;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+
+    /* Diminui duas vezes mais que o outro elemento */
+    flex-shrink: 2;
+}
+
+/** Conteudo Mobile */
+@media(max-width: 768px) {
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+}
